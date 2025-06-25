@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+body {
+  background: url('https://d1csarkz8obe9u.cloudfront.net/posterpreviews/flower-background%2C-frame-flower%2C-background-design-template-f8dfe0c921d7daf17ba69f0d58e5ca02_screen.jpg?ts=1637036809') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paper {
+  width: 90vw;
+  max-width: 800px;
+  height: 90vh;
+  max-height: 900px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  padding: 30px;
+  overflow-y: auto;
+  transform: scale(0.8);
+  opacity: 0;
+  animation: fadeInZoom 1s forwards;
+}
+@keyframes fadeInZoom {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.content {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8B4513;
+}
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #A0522D;
+}
+.section {
+  margin: 40px 0;
+  text-align: center;
+}
+iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+input, textarea {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #E91E63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+button:hover {
+  background: #D81B60;
+}
+.calendar-display {
+  border: 2px solid #E91E63;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: #fff;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+.calendar-display .month {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #E91E63;
+}
+.calendar-display .day {
+  font-size: 3em;
+  font-weight: 700;
+  color: #333;
+}
+.calendar-display .year {
+  font-size: 1.5em;
+  color: #555;
+}
+.timeline-boxes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.timeline-box {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  border: 2px solid #E91E63;
+  border-radius: 15px;
+  background: #fff;
+}
+.timeline-box .title {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #8B4513;
+  margin-bottom: 10px;
+}
+.note {
+  margin-top: 30px;
+}
+.flower-decoration {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+}
